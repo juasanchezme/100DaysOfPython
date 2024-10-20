@@ -15,7 +15,8 @@
 
 ## 📅 Mi Progreso Diario
 
-- Día 1: 
+- Día 1: ✔️
+- Día 2:
 
 *(Iré actualizando mi progreso diariamente)*
 
