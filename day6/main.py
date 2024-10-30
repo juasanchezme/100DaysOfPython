@@ -14,3 +14,5 @@ while not at_goal():    # same as while at_goal() != True:
 
 
     move()
+    
+    
