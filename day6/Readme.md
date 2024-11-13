@@ -11,4 +11,6 @@ https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freebor
 # Exercise 
 ![alt text](image.png)
 
+# Another way of solving it
 
+![alt text](image-4.png)
