@@ -14,3 +14,25 @@ https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freebor
 # Another way of solving it
 
 ![alt text](image-4.png)
+
+# Final Exercise 
+![alt text](image-5.png)
+
+
+```
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+while not at_goal():
+    if wall_in_front() and wall_on_right():
+        turn_left()
+    
+    elif front_is_clear() and wall_on_right():
+        move()
+    
+    else:
+        turn_right()
+        move()
+```
