@@ -8,7 +8,6 @@ shift = int(input("Type the shift number:\n"))
 
 def encrypt(text, shift):
 
-
   encri_word=""
   for i in text:
     pos=alphabet.index(i)

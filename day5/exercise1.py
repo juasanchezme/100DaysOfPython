@@ -1,4 +1,4 @@
-# sum of all of the elements in a list using for 
+ # sum of all of the elements in a list using for 
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
 suma = 0

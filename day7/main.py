@@ -54,7 +54,7 @@ stages = ['''
       |
 =========
 ''']
-lives=6
+lives= 6
 
 import random
 word_list = ["aardvark", "baboon", "camel"]
