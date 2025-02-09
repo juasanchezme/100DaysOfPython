@@ -1,4 +1,4 @@
-print("Welcome to Juan's Beer Tip Calculator!")
+print("Welcome to Juan's Beer Tip Calculator !")
 
 # Get the total bill amount, tip percentage, and number of people
 bill = float(input("What is the total beer tab?\n$:"))
