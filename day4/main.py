@@ -1,6 +1,5 @@
 import random
 
-
 rock = '''
     _______
 ---'   ____)
