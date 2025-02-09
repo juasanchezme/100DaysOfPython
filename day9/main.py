@@ -1,43 +1,22 @@
-#Calculator
-def add(n1, n2):
-  return n1 + n2
+from Art import logo
+print(logo)
 
-def subtract(n1, n2):
-  return n1 - n2
+apuestas = {}
+while True:
+    name = input("ingrese nombre ")
+    monto = int(input("ingrese monto "))
+    condicion = input("hay algun otro subastador si o no ")
+    apuestas[name] = monto
+    if condicion == "no":
+        break
 
-def multiply(n1, n2):
-  return n1 * n2
+maximoMonto = 0
+print(f"los jugadores que participaron fueron ")
+for key in apuestas:
+    print(f"{key} con monto de {apuestas[key]}")
+    
+    if apuestas[key] > maximoMonto:
+        maximoMonto = apuestas[key]
+        ganador = key
 
-def divide(n1, n2):
-  return n1 / n2
-
-operations = {
-  "+": add,
-  "-": subtract,
-  "*": multiply,
-  "/": divide
-}
-
-num1 = int(input("What's the first number?: "))
-for symbol in operations:
-  print(symbol)
-
-#Here we select "+"
-operation_symbol = input("Pick an operation: ")
-num2 = int(input("What's the next number?: "))
-calculation_function = operations[operation_symbol]
-first_answer = calculation_function(num1, num2)
-
-print(f"{num1} {operation_symbol} {num2} = {first_answer}")
-
-#Here we select "*" which overides the "+" we selected on line 26.
-operation_symbol = input("Pick an operation: ")
-num3 = int(input("What's the next number?: "))
-
-#Here the calculation_function selected will be the multiply() function
-calculation_function = operations[operation_symbol]
-
-
-second_answer = calculation_function(first_answer, num3)
-
-print(f"{first_answer} {operation_symbol} {num3} = {second_answer}")
+print(f"El ganador de la subasta fue {ganador} con un valor de subasta de {maximoMonto}")
