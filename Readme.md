@@ -24,7 +24,13 @@
 - Día 7: ✔️
 - Día 8: ✔️
 - Día 9: ✔️
-- Día 10: 
+- Día 10:✔️
+- Día 11: 
+- Día 1: 
+- Día 1: 
+- Día 1: 
+- Día 1:
+- Día 1: 
 
 *(Iré actualizando mi progreso diariamente)*
 
