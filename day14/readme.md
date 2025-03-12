@@ -1,0 +1,1 @@
+El objetivo es crear un juego similiar a http://www.higherlowergame.com/ para este caso con personas colombianas 
