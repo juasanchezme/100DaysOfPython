@@ -37,20 +37,57 @@ resources = {
     "money": 0,
 }
 
-pedido = input("​What would you like? (espresso/latte/cappuccino):​")
-
-if pedido == "report":
-    for key, value in resources.items():
-        print(key, value)
 
 # TODO: 2. Given an input, Check resources
 
-gastoDeRecurso = resources.copy()
+def checkResources():
+    for i in ["water", "milk", "coffee"]:
+        suministro = resources[i] - MENU[pedido]["ingredients"][i]
+        if suministro < 0:
+            print(f"Sorry there is not enough {resources[i]}")
+            return False
+        return True
+    
 
-for resource in ["water", "milk", "coffee"]:
-    gastoDeRecurso[resource] = resources[resource] - MENU[pedido]["ingredients"][resource]
+# If there is enough resources, process with the payment 
 
-    if gastoDeRecurso[resource] < 0:
-        print(f"Sorry, but there is not enough {resource}")
+def payment():
+    status = False
 
-# If there is enough resources, process with the payment
+    print("Please insert money")
+    quarters = int(input("How many quarters "))
+    dimes = int(input("How many dimes "))
+    nickels = int(input("How many nickels "))
+    pennies = int(input("How many pennies "))
+
+    userMoney = quarters*0.25 + 0.10*dimes + nickels*0.05 + pennies*0.02
+    productPrice = MENU[pedido]["cost"]
+    vuelto = userMoney - productPrice
+    vuelto = round(vuelto,2)
+
+    if userMoney >= productPrice:
+        print(f"Preparing beverage {pedido}, you have {vuelto} back")
+        status = True
+
+    else:
+        print(f"Sorry, not enough money, you may add {-vuelto}")
+
+    return status
+
+MachineON = True   
+while MachineON:
+    pedido = input("​What would you like? (espresso/latte/cappuccino):​")
+
+    if pedido == "report":
+        for key, value in resources.items():
+            print(key, value)
+    elif pedido == "off":
+        MachineON = False
+
+    else:
+        if checkResources():
+            if payment():
+                resources["money"] += MENU[pedido]["cost"]
+                resources["water"] -= MENU[pedido]["ingredients"]["water"]
+                resources["milk"] -= MENU[pedido]["ingredients"]["milk"]
+                resources["coffee"] -= MENU[pedido]["ingredients"]["coffee"]
