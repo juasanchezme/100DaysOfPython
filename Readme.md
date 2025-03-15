@@ -27,10 +27,15 @@
 - Día 10:✔️
 - Día 11:✔️
 - Día 12:✔️
-- Día 1: 
-- Día 1: 
+- Día 13:✔️ 
+- Día 14:✔️
+- Día 15:✔️
 - Día 1:
 - Día 1: 
+- Día 1: 
+- Día 1: 
+- Día 1: 
+
 
 *(Iré actualizando mi progreso diariamente)*
 
