@@ -33,8 +33,18 @@
 - Día 16:✔️
 - Día 17:✔️
 - Día 18:✔️ 
-- Día 1: 
-- Día 1: 
+- Día 19:✔️
+- Día 20:
+- Día 21:
+- Día 22:
+- Día 23:
+- Día 24:
+- Día 25:
+- Día 26:
+- Día 27:
+- Día 28:
+- Día 29:
+- Día 30:
 
 
 *(Iré actualizando mi progreso diariamente)*
