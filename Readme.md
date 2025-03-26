@@ -49,6 +49,10 @@
 
 *(Iré actualizando mi progreso diariamente)*
 
+Proyecto del día 11: blackjack jugando en consola 
+Proyecto del día 21: juego de la culebrita usando turtle basado en tkinter GUI
+
+
 ## 🛠️ Herramientas y Librerías que Estoy Usando
 
 - **Python 3.12** 🐍
