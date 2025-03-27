@@ -34,8 +34,8 @@
 - Día 17:✔️
 - Día 18:✔️ 
 - Día 19:✔️
-- Día 20:
-- Día 21:
+- Día 20:✔️
+- Día 21:✔️
 - Día 22:
 - Día 23:
 - Día 24:
@@ -50,7 +50,7 @@
 *(Iré actualizando mi progreso diariamente)*
 
 Proyecto del día 11: blackjack jugando en consola 
-Proyecto del día 21: juego de la culebrita usando turtle basado en tkinter GUI
+Proyecto del día 21: juego de la culebrita con programación orientada a objetos usando libreria turtle basado en tkinter GUI
 
 
 ## 🛠️ Herramientas y Librerías que Estoy Usando
