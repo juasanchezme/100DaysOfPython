@@ -9,6 +9,7 @@ class Ball(Turtle):
         self.color("white")
         self.rand_heading()
         self.speed(0)
+        self.game_speed = 0.08
 
     def rand_heading(self):
         self.setheading(random.randint(140, 220))
@@ -29,6 +30,7 @@ class Ball(Turtle):
         # Rebote en los bordes laterales (izquierda y derecha)
         if self.xcor() < -310 or self.xcor() > 310:
             self.setheading(180 - self.heading())  # Refleja la dirección en X
+            self.game_speed *= 0.9
 
             
             
