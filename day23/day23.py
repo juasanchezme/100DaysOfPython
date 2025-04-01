@@ -39,6 +39,7 @@ while game_is_on:
         if my_turtle.distance(obstacle) < 20:
             print("loose")
             score.game_over()
+            game_is_on =False
         if my_turtle.ycor() > 310:
             score.update_user_score()
             my_turtle.goto(0,-330)
