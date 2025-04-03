@@ -1,0 +1,199 @@
+,Fur color,Count
+0,"              X          Y Unique Squirrel ID Hectare Shift      Date  \
+1    -73.957044  40.794851     37E-PM-1006-03     37E    PM  10062018   
+3    -73.975725  40.769703      5D-PM-1018-05     05D    PM  10182018   
+5    -73.956570  40.790256     33H-AM-1019-02     33H    AM  10192018   
+6    -73.971974  40.769305      6G-PM-1020-02     06G    PM  10202018   
+7    -73.960261  40.794288     35C-PM-1013-03     35C    PM  10132018   
+...         ...        ...                ...     ...   ...       ...   
+3016 -73.966290  40.784330     23C-AM-1019-01     23C    AM  10192018   
+3018 -73.963943  40.790868     30B-AM-1007-04     30B    AM  10072018   
+3019 -73.970402  40.782560     19A-PM-1013-05     19A    PM  10132018   
+3020 -73.966587  40.783678     22D-PM-1012-07     22D    PM  10122018   
+3021 -73.963994  40.789915     29B-PM-1010-02     29B    PM  10102018   
+
+      Hectare Squirrel Number       Age Primary Fur Color  \
+1                           3     Adult              Gray   
+3                           5  Juvenile              Gray   
+5                           2  Juvenile              Gray   
+6                           2     Adult              Gray   
+7                           3       NaN              Gray   
+...                       ...       ...               ...   
+3016                        1     Adult              Gray   
+3018                        4     Adult              Gray   
+3019                        5     Adult              Gray   
+3020                        7     Adult              Gray   
+3021                        2       NaN              Gray   
+
+         Highlight Fur Color  ...   Kuks  Quaas  Moans Tail flags  \
+1                   Cinnamon  ...  False  False  False      False   
+3                        NaN  ...  False  False  False      False   
+5                   Cinnamon  ...  False  False  False      False   
+6                        NaN  ...  False  False  False      False   
+7                   Cinnamon  ...  False  False  False      False   
+...                      ...  ...    ...    ...    ...        ...   
+3016         Cinnamon, White  ...   True  False  False      False   
+3018                     NaN  ...  False  False  False      False   
+3019                   White  ...  False  False  False      False   
+3020  Black, Cinnamon, White  ...  False  False  False      False   
+3021         Cinnamon, White  ...  False  False  False      False   
+
+     Tail twitches  Approaches  Indifferent  Runs from  Other Interactions  \
+1            False       False        False       True                  me   
+3            False       False        False       True                 NaN   
+5            False       False        False      False                 NaN   
+6            False       False         True      False                 NaN   
+7            False       False        False       True                 NaN   
+...            ...         ...          ...        ...                 ...   
+3016         False       False         True      False                 NaN   
+3018         False       False        False       True                 NaN   
+3019         False       False         True      False                 NaN   
+3020         False       False         True      False                 NaN   
+3021         False       False         True      False                 NaN   
+
+                                          Lat/Long  
+1     POINT (-73.9570437717691 40.794850940803904)  
+3       POINT (-73.9757249834141 40.7697032606755)  
+5       POINT (-73.9565700386162 40.7902561000937)  
+6       POINT (-73.9719735582476 40.7693045133578)  
+7      POINT (-73.9602609920814 40.79428830455661)  
+...                                            ...  
+3016    POINT (-73.9662895079734 40.7843300758044)  
+3018    POINT (-73.9639431360458 40.7908677445466)  
+3019    POINT (-73.9704015859639 40.7825600069973)  
+3020    POINT (-73.9665871993517 40.7836775064883)  
+3021    POINT (-73.9639941227864 40.7899152327912)  
+
+[2473 rows x 31 columns]",2473
+1,"              X          Y Unique Squirrel ID Hectare Shift      Date  \
+2    -73.976831  40.766718      2E-AM-1010-03     02E    AM  10102018   
+11   -73.968361  40.772591     11H-AM-1010-03     11H    AM  10102018   
+18   -73.976860  40.770280      5C-PM-1010-09     05C    PM  10102018   
+25   -73.964987  40.776493     16I-AM-1008-01     16I    AM  10082018   
+26   -73.967063  40.773499     12I-AM-1013-01     12I    AM  10132018   
+...         ...        ...                ...     ...   ...       ...   
+2997 -73.975208  40.775538     11B-AM-1007-01     11B    AM  10072018   
+3002 -73.969866  40.774000     12F-PM-1007-09     12F    PM  10072018   
+3003 -73.952848  40.792206     36I-PM-1007-08     36I    PM  10072018   
+3017 -73.964544  40.781160     21F-PM-1018-02     21F    PM  10182018   
+3022 -73.975479  40.769640      5E-PM-1012-01     05E    PM  10122018   
+
+      Hectare Squirrel Number       Age Primary Fur Color Highlight Fur Color  \
+2                           3     Adult          Cinnamon                 NaN   
+11                          3     Adult          Cinnamon               White   
+18                          9     Adult          Cinnamon                Gray   
+25                          1     Adult          Cinnamon         Gray, White   
+26                          1     Adult          Cinnamon               White   
+...                       ...       ...               ...                 ...   
+2997                        1     Adult          Cinnamon                Gray   
+3002                        9     Adult          Cinnamon                Gray   
+3003                        8  Juvenile          Cinnamon                Gray   
+3017                        2  Juvenile          Cinnamon                Gray   
+3022                        1     Adult          Cinnamon         Gray, White   
+
+      ...   Kuks  Quaas  Moans Tail flags Tail twitches  Approaches  \
+2     ...  False  False  False      False         False       False   
+11    ...  False  False  False      False          True       False   
+18    ...  False  False  False      False         False       False   
+25    ...  False  False  False      False          True       False   
+26    ...  False  False  False      False          True       False   
+...   ...    ...    ...    ...        ...           ...         ...   
+2997  ...  False  False  False      False          True        True   
+3002  ...  False  False  False      False         False       False   
+3003  ...  False  False  False      False          True       False   
+3017  ...  False  False  False      False         False       False   
+3022  ...  False  False  False      False         False        True   
+
+      Indifferent  Runs from  Other Interactions  \
+2            True      False                 NaN   
+11           True      False                 NaN   
+18          False      False                 NaN   
+25           True      False                 NaN   
+26          False       True                 NaN   
+...           ...        ...                 ...   
+2997        False      False                 NaN   
+3002         True      False                 NaN   
+3003         True      False                 NaN   
+3017        False       True                 NaN   
+3022        False      False                 NaN   
+
+                                         Lat/Long  
+2     POINT (-73.9768311751004 40.76671780725581)  
+11     POINT (-73.9683613516225 40.7725908847499)  
+18     POINT (-73.9768603630674 40.7702795904962)  
+25     POINT (-73.9649866016038 40.7764929694457)  
+26    POINT (-73.9670628558161 40.77349914209411)  
+...                                           ...  
+2997   POINT (-73.9752079247419 40.7755376979002)  
+3002    POINT (-73.9698663926657 40.773999710413)  
+3003   POINT (-73.9528482858163 40.7922056218325)  
+3017   POINT (-73.9645437409662 40.7811599933331)  
+3022   POINT (-73.9754794191553 40.7696404489025)  
+
+[392 rows x 31 columns]",392
+2,"              X          Y Unique Squirrel ID Hectare Shift      Date  \
+41   -73.957956  40.795934     38C-PM-1014-09     38C    PM  10142018   
+49   -73.968064  40.779250     17E-AM-1017-05     17E    AM  10172018   
+98   -73.971054  40.772469     10F-PM-1019-05     10F    PM  10192018   
+129  -73.958166  40.799771     41A-PM-1007-06     41A    PM  10072018   
+180  -73.970878  40.772474     10F-PM-1019-12     10F    PM  10192018   
+...         ...        ...                ...     ...   ...       ...   
+2908 -73.956448  40.797693     40C-PM-1006-04     40C    PM  10062018   
+2973 -73.957579  40.795993     38D-AM-1017-06     38D    AM  10172018   
+2974 -73.959412  40.791787     33E-AM-1014-01     33E    AM  10142018   
+2984 -73.972116  40.766050      3I-PM-1013-03     03I    PM  10132018   
+2998 -73.972415  40.773080     10E-AM-1010-02     10E    AM  10102018   
+
+      Hectare Squirrel Number    Age Primary Fur Color Highlight Fur Color  \
+41                          9  Adult             Black                 NaN   
+49                          5  Adult             Black                 NaN   
+98                          5  Adult             Black                 NaN   
+129                         6  Adult             Black                 NaN   
+180                        12  Adult             Black               White   
+...                       ...    ...               ...                 ...   
+2908                        4  Adult             Black                 NaN   
+2973                        6  Adult             Black            Cinnamon   
+2974                        1  Adult             Black            Cinnamon   
+2984                        3  Adult             Black            Cinnamon   
+2998                        2  Adult             Black                Gray   
+
+      ...   Kuks  Quaas  Moans Tail flags Tail twitches  Approaches  \
+41    ...  False  False  False      False         False        True   
+49    ...  False  False  False      False         False       False   
+98    ...  False  False  False      False         False       False   
+129   ...  False  False  False      False         False       False   
+180   ...  False  False  False      False         False       False   
+...   ...    ...    ...    ...        ...           ...         ...   
+2908  ...  False  False  False      False         False       False   
+2973  ...  False  False  False      False         False       False   
+2974  ...  False  False  False      False         False       False   
+2984  ...  False  False  False      False         False       False   
+2998  ...  False  False  False      False          True       False   
+
+      Indifferent  Runs from  Other Interactions  \
+41          False      False                 NaN   
+49           True      False                 NaN   
+98           True      False                 NaN   
+129         False       True                 NaN   
+180         False       True                 NaN   
+...           ...        ...                 ...   
+2908        False       True                 NaN   
+2973        False       True                 NaN   
+2974        False       True                 NaN   
+2984        False       True                 NaN   
+2998         True      False                 NaN   
+
+                                        Lat/Long  
+41    POINT (-73.9579564338627 40.7959337795027)  
+49     POINT (-73.9680635070949 40.779249873647)  
+98    POINT (-73.9710541405708 40.7724691605718)  
+129   POINT (-73.9581655949437 40.7997708190022)  
+180    POINT (-73.9708775864433 40.772473633538)  
+...                                          ...  
+2908  POINT (-73.9564478909357 40.7976928775417)  
+2973  POINT (-73.9575791421589 40.7959934459432)  
+2974   POINT (-73.959412243507 40.7917871123534)  
+2984  POINT (-73.9721159387757 40.7660503188637)  
+2998    POINT (-73.972415182837 40.773080463452)  
+
+[103 rows x 31 columns]",103
