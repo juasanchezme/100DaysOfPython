@@ -24,10 +24,23 @@ states = data["state"].to_list()
 correct_guesses = []
 score = 0 
 
-game_is_on = True
 
-while game_is_on:
+while len(correct_guesses) < 50:
     answer_state = screen.textinput(title=f"Guess a state {score}/50", prompt="Write a USA State name").title()
+
+    if answer_state == "Exit":
+
+        # states_to_learn.csv
+
+        states_to_learn = []
+        for state in states:
+            if state not in correct_guesses:
+                states_to_learn.append(state)
+
+        new_data = pd.DataFrame(states_to_learn)
+        new_data.to_csv("./day25/US_States_game/states_to_learn.csv")
+        
+        break
 
     if answer_state in correct_guesses:
         print("ya está en la lista")
@@ -47,10 +60,6 @@ while game_is_on:
     else:
         print("no está")
     
-    if len(correct_guesses) == 50:
-        game_is_on = False
-    
-
 
 
 
