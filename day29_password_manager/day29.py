@@ -1,13 +1,31 @@
 from tkinter import *
+from tkinter import messagebox
+
 RED2 = "#E83F25"
 RED = "#A62C2C"
 ORANGE = "#EA7300"
 CREAM = "#D3CA79"
 FONT_NAME = "Courier"
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
+def generate_password():
+    pass 
+
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
+def save():
+    website = website_entry.get()
+    email = email_entry.get()
+    password = password_entry.get()
+
+    is_correct = messagebox.askokcancel(title=website, message=f"You entered: \n website: {website}\n email: {email} \n password: {password} \n Is it correct?")
+    
+    if is_correct:
+        with open("day29_password_manager/data.txt", mode="a") as file:
+            file.write(f"{website} | {email} | {password} \n")
+            website_entry.delete(0, END)
+            email_entry.delete(0, END)
+            password_entry.delete(0, END)
 # ---------------------------- UI SETUP ------------------------------- #
 
 # 🎨 
@@ -19,15 +37,7 @@ ACCENT_COLOR = "#3B82F6"  # Botones o acciones (azul)
 ALERT_COLOR = "#EF4444"   # Para botón "Add"
 FONT_NAME = "Courier"
 
-# ---------------------------- FUNCIONES ------------------------------- #
-def generate_password():
-    pass 
 
-def save():
-    with open("day29_password_manager/data.txt", mode="a") as file:
-        file.write(f"{website_entry.get()} | {email_entry.get()} | {password_entry.get()} \n")
-
-    
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()

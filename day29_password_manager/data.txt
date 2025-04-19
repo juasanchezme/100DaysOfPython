@@ -1,2 +1,4 @@
 Amazon | Juan | password 
 streamingonlinemovies | juan@email.com | 123 
+dadada | affadas@mail.com | asasaa 
+spotify | myaccountname | spoty 
