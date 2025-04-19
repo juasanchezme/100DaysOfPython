@@ -43,7 +43,7 @@
 - Día 26:✔️
 - Día 27:✔️
 - Día 28:✔️
-- Día 29:
+- Día 29:✔️
 - Día 30:
 
 
@@ -52,6 +52,8 @@
 Proyecto del día 11: blackjack jugando en consola 
 
 Proyecto del día 21: juego de la culebrita con programación orientada a objetos usando libreria turtle basado en tkinter GUI
+
+Proyecto del día 29: Gestor de contraseñas con Tkinter GUI
 
 
 ## 🛠️ Herramientas y Librerías que Estoy Usando

@@ -30,7 +30,7 @@ def save():
         is_correct = messagebox.askokcancel(title=website, message=f"You entered: \n website: {website}\n email: {email} \n password: {password} \n Is it correct?")
         
         if is_correct:
-            with open("day29_password_manager/data.txt", mode="a") as file:
+            with open("./data.txt", mode="a") as file:
                 file.write(f"{website} | {email} | {password} \n")
                 website_entry.delete(0, END)
                 email_entry.delete(0, END)
@@ -64,7 +64,7 @@ title_label.grid(column=1, row=0, pady=(0, 20))
 
 # Logo
 canvas = Canvas(width=200, height=200, bg=PRIMARY_BG, highlightthickness=0)
-logo_img = PhotoImage(file="day29_password_manager/logo_candado.png")  # Ajusta la ruta si es necesario
+logo_img = PhotoImage(file="./day29_password_manager/logo_candado.png")  # Ajusta la ruta si es necesario
 canvas.create_image(100, 100, image=logo_img)
 canvas.grid(column=1, row=1, pady=(0, 20))
 
