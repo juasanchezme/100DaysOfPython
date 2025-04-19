@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
+from password_generator import password_maker
 
 RED2 = "#E83F25"
 RED = "#A62C2C"
@@ -8,7 +9,8 @@ CREAM = "#D3CA79"
 FONT_NAME = "Courier"
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_password():
-    pass 
+    password_generated = password_maker()
+    password_entry.insert(END, password_generated)
 
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
@@ -18,14 +20,17 @@ def save():
     email = email_entry.get()
     password = password_entry.get()
 
-    is_correct = messagebox.askokcancel(title=website, message=f"You entered: \n website: {website}\n email: {email} \n password: {password} \n Is it correct?")
-    
-    if is_correct:
-        with open("day29_password_manager/data.txt", mode="a") as file:
-            file.write(f"{website} | {email} | {password} \n")
-            website_entry.delete(0, END)
-            email_entry.delete(0, END)
-            password_entry.delete(0, END)
+    if len(website) == 0 or len(email) == 0 or len(password) == 0:
+        messagebox.showerror(title="empty spaces",message="Don't let any empty spaces")
+    else:    
+        is_correct = messagebox.askokcancel(title=website, message=f"You entered: \n website: {website}\n email: {email} \n password: {password} \n Is it correct?")
+        
+        if is_correct:
+            with open("day29_password_manager/data.txt", mode="a") as file:
+                file.write(f"{website} | {email} | {password} \n")
+                website_entry.delete(0, END)
+                email_entry.delete(0, END)
+                password_entry.delete(0, END)
 # ---------------------------- UI SETUP ------------------------------- #
 
 # 🎨 

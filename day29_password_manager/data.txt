@@ -2,3 +2,5 @@ Amazon | Juan | password
 streamingonlinemovies | juan@email.com | 123 
 dadada | affadas@mail.com | asasaa 
 spotify | myaccountname | spoty 
+mercadolibre | name | pass 
+Crunchyroll | user001 | &MKcwb$e6Inc*%4V2 
