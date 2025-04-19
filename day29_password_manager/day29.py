@@ -24,7 +24,10 @@ def generate_password():
     pass 
 
 def save():
-    pass 
+    with open("day29_password_manager/data.txt", mode="a") as file:
+        file.write(f"{website_entry.get()} | {email_entry.get()} | {password_entry.get()} \n")
+
+    
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
@@ -52,15 +55,15 @@ Label(text="Email/Username:", fg=PRIMARY_TEXT, bg=PRIMARY_BG, font=(FONT_NAME, 1
 Label(text="Password:", fg=PRIMARY_TEXT, bg=PRIMARY_BG, font=(FONT_NAME, 14)).grid(column=0, row=4)
 
 # Entries
-website_entry = Entry(width=35, bg=INPUT_BG, fg=INPUT_FG, font=(FONT_NAME, 12))
+website_entry = Entry(width=20, bg=INPUT_BG, fg=INPUT_FG, font=(FONT_NAME, 12))
 website_entry.grid(column=1, row=2, columnspan=2, pady=5, sticky="ew")
 website_entry.focus()
 
-email_entry = Entry(width=35, bg=INPUT_BG, fg=INPUT_FG, font=(FONT_NAME, 12))
+email_entry = Entry(width=20, bg=INPUT_BG, fg=INPUT_FG, font=(FONT_NAME, 12))
 email_entry.insert(0, "")
 email_entry.grid(column=1, row=3, columnspan=2, pady=5,sticky="ew")
 
-password_entry = Entry(width=21, bg=INPUT_BG, fg=INPUT_FG, font=(FONT_NAME, 12))
+password_entry = Entry(width=20, bg=INPUT_BG, fg=INPUT_FG, font=(FONT_NAME, 12))
 password_entry.grid(column=1, row=4, pady=5,sticky="ew")
 
 # Botón generar contraseña
@@ -81,7 +84,7 @@ add_button = Button(
     bg=ALERT_COLOR, 
     fg=PRIMARY_TEXT, 
     font=(FONT_NAME, 12, "bold"),
-    width=36
+    width=20
 )
 add_button.grid(column=1, row=5, columnspan=2, pady=20, sticky="ew")
 

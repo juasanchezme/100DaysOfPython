@@ -1,2 +1,0 @@
- amazon |  juan |  password 
-zz
