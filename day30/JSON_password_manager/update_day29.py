@@ -16,7 +16,22 @@ def generate_password():
     password_entry.insert(END, password_generated)
     pyperclip.copy(password_generated)
     pyperclip.paste
+# ---------------------------- PASSWORD Search ------------------------------- #
 
+def search_password():
+    website = website_entry.get()
+    try:
+        with open("./day30/JSON_password_manager/data.json", mode="r") as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError:
+        messagebox.showerror(title="File not found", message="No data file found")
+    else:
+        if website in data:
+            email = data[website]["email"]
+            password = data[website]["password"]
+            messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+        else:
+            messagebox.showerror(title="Error", message=f"No details for {website} exists.")
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
@@ -99,12 +114,12 @@ Label(text="Password:", fg=PRIMARY_TEXT, bg=PRIMARY_BG, font=(FONT_NAME, 14)).gr
 
 # Entries
 website_entry = Entry(width=20, bg=INPUT_BG, fg=INPUT_FG, font=(FONT_NAME, 12))
-website_entry.grid(column=1, row=2, columnspan=2, pady=5, sticky="ew")
+website_entry.grid(column=1, row=2, pady=5, sticky="ew")
 website_entry.focus()
 
 email_entry = Entry(width=20, bg=INPUT_BG, fg=INPUT_FG, font=(FONT_NAME, 12))
 email_entry.insert(0, "")
-email_entry.grid(column=1, row=3, columnspan=2, pady=5,sticky="ew")
+email_entry.grid(column=1, row=3, columnspan=2, pady=5, sticky="ew")
 
 password_entry = Entry(width=20, bg=INPUT_BG, fg=INPUT_FG, font=(FONT_NAME, 12))
 password_entry.grid(column=1, row=4, pady=5,sticky="ew")
@@ -119,6 +134,17 @@ password_button = Button(
     width=20
 )
 password_button.grid(column=2, row=4, padx=5)
+
+# Botón buscar contraseña
+password_search_button = Button(
+    text="Search", 
+    command=search_password,
+    bg=ACCENT_COLOR, 
+    fg=PRIMARY_TEXT, 
+    font=(FONT_NAME, 10), 
+    width=20
+)
+password_search_button.grid(column=2, row=2, padx=5)
 
 # Botón agregar
 add_button = Button(
